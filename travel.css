@@ -1,0 +1,132 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.pricing {
+    background-color: #f7f7f7;
+    padding: 2rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.pricing h2 {
+    margin-top: 0;
+}
+
+.pricing ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing li {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.pricing li:last-child {
+    border-bottom: none;
+}
+
+.pricing h3 {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.pricing ul li span {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.pricing ul li ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing ul li ul li {
+    margin-bottom: 0.5rem;
+}
+
+.pricing button.toggle {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.pricing button.toggle:hover {
+    background-color: #444;
+}
+
+.pricing .details {
+    display: none;
+}
+
+.pricing .details p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+.pricing .details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.pricing .details ul li {
+    margin-bottom: 0.5rem;
+}
+
+.pricing .details ul li:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .pricing {
+        flex-direction: column;
+    }
+    .pricing ul {
+        flex-wrap: wrap;
+    }
+    .pricing li {
+        margin-bottom: 1rem;
+    }
+    .pricing button.toggle {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .pricing {
+        padding: 1rem;
+    }
+    .pricing ul {
+        flex-direction: column;
+    }
+    .pricing li {
+        margin-bottom: 1rem;
+    }
+    .pricing button.toggle {
+        font-size: 1rem;
+    }
+}
